@@ -1,0 +1,9 @@
+{% extends "pages/base.html" %}
+{% block title %}{{ article_detail.title }}{% endblock %}
+{% block content %}
+  <div class="container mt-5">
+    <h3>{{ article_detail.title }}</h3>
+    <i>{{ article_detail.created_date }}</i>
+    <p>{{ article_detail.content }}</p>
+  </div>
+{% endblock %}
